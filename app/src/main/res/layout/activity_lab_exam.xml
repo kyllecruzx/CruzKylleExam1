@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:background="@color/bgcolor">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="128dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/personal"
+        android:layout_alignParentLeft="true"
+        tools:ignore="RtlCompat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="121dp"
+        android:layout_height="128dp"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/office" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="125dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView3"
+        app:srcCompat="@drawable/pub"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/Custom"
+        android:layout_width="109dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginStart="11dp"
+        android:contentDescription="@string/personal_notes"
+        android:gravity="center"
+        android:text="personal notes"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Custom"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/office_notes"
+        android:gravity="center"
+        android:text="office notes" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/Custom"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginEnd="11dp"
+        android:gravity="center"
+        android:text="public notes"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="11dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="196dp"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        app:cardBackgroundColor="@color/note01"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Things To Do" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="197dp"
+        android:layout_height="161dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginStart="18dp"
+        app:cardBackgroundColor="@color/note02"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminders" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="140dp"
+        android:layout_height="119dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="13dp"
+        app:cardBackgroundColor="@color/note03"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal List" />
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="147dp"
+        android:layout_height="139dp"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="163dp"
+        app:srcCompat="@drawable/calendar"
+        android:layout_alignRight="@+id/textView3" />
+
+</RelativeLayout>

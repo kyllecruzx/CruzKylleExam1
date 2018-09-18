@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CruzKylleExam1
+    </string>
+    <string name="public_notes">Public Notes</string>
+    <string name="personal_notes">Personal Notes</string>
+    <string name="office_notes">Office Notes</string>
+</resources>
